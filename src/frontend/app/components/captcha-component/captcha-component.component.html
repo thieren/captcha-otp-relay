@@ -1,0 +1,22 @@
+<div class="col-12 d-flex justify-content-center align-items-center fullheight">
+  <div class="card col-10 col-md-auto p-3">
+    <form action="/submit" method="post">
+      Please enter the Captcha text.
+      <p></p>
+      
+      <div class="row d-flex justify-content-center mb-3">
+        <img class="col-10 col-sm-8" [src]="captchaImageData" />
+      </div>
+
+      <div class="row d-flex justify-content-center">
+          <div class="form-floating mb-3 col-8 col-sm-6">
+              <input type="text" class="form-control" id="answer" name="answer" placeholder="">
+              <label for="answer">Captcha</label>
+          </div>
+      </div>
+
+      <p></p>
+      <button type="submit" class="btn btn-success">Submit</button>
+    </form>
+  </div>
+</div>
